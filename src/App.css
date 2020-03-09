@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+table {
+  margin: 10px auto;
+}
+
+table th,
+td {
+  width: 129px;
+  padding: 7px;
+  border: 1px solid;
+  font-size: 17px;
+}
+table .action {
+  width: 160px;
+}
+table .email {
+  width: 160px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,5 +51,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table th,
+  td {
+    width: auto;
+    padding: 2px;
+    border: 1px solid;
+    font-size: 15px;
+  }
+  table {
+    margin: 0px 5px;
   }
 }
